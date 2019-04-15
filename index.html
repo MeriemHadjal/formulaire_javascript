@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Formulaire</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
 
@@ -15,38 +18,63 @@
 
         </div>
 
-        <form>
+        <form id="formulaire_content">
 
-           <label for="nom">Nom</label>
-           <input type ="text" id="nom" name="nom" size="30" maxlength="10" required>
+        <div>
 
-           <label for="prenom">Prenom</label>
-           <input type ="text" id="prenom" name="prenom" size="30" maxlength="10" required>
+            <label class="contenu" for="nom">Nom</label>
+            <input type ="text"  id="nom" name="nom" size="30" maxlength="10"  > 
+            
+            <span id="errornom"></span>
+            
 
-           <label for="mail">Email</label>
-           <input type="email" id="email" name="email" size="30" maxlength="10" required>
+            <label class="contenu" for="prenom">Prenom</label>
+            <input type ="text"  id="prenom" name="prenom" size="30" maxlength="10"  ><!--onBlur="alert('Ceci est un Blur')"-->
+            <span id="errorprenom"></span>
 
-           <label for="phone">Telephone</label>
-           <input type ="tel" id="tel" name="tel" size="30" maxlength="10" required>
+            <label class="contenu" for="mail">Email</label>
+            <input type="email"  id="email" name="email" size="30" maxlength="100"  ><!--onBlur="alert('Ceci est un Blur')"-->
+            <span id="erroremail" ></span>
+            
 
-           <label for="rue">Rue</label>
-           <input type="text" id="rue" name="rue" size="30" maxlength="10"required>
+            <label class="contenu" for="phone">Telephone</label>
+            <input type ="tel"  id="tel" name="tel" size="30" maxlength="15"  ><!--onBlur="alert('Ceci est un Blur')"-->
+            <span id="errortel"></span>
+            
 
-           <label for="codepostal">Code Postal</label>
-           <input type="text" id="codepostal" name="codepostal"size="30" maxlength="10" required>
+            <label class="contenu" for="rue">Rue</label>
+            <input type="text"  id="rue" name="rue" size="30" maxlength="100" ><!--onBlur="alert('Ceci est un Blur')"-->
+            <span id="errorrue"></span>
+            
 
-           <label for="ville">Ville</label>
-           <input type="text" id="ville" name="ville" size="30" maxlength="10" required>
+            <label class="contenu" for="codepostal">Code Postal</label>
+            <input type="text"  id="codepostal" name="codepostal"size="30" maxlength="10"  ><!--onBlur="alert('Ceci est un Blur')"-->
+            <span id="errorcp"></span>
+            
 
-           <label for="message">Votre message</label>
-           <textarea name="message" id="message" rows="10" cols="50"></textarea>
+            <label class="contenu" for="ville">Ville</label>
+            <input type="text"  id="ville" name="ville" size="30" maxlength="30"  ><!--onBlur="alert('Ceci est un Blur')"-->
+            <span id="errorville"></span>
+            
 
+            <label class="contenu" for="message">Votre message</label>
+            <textarea name="message" id="message" rows="10" cols="50"></textarea><!--onBlur="alert('Ceci est un Blur')"-->
+            <span id="errormessage"></span>
+            
 
+            <button  class="bouton" type="submit"  value="envoyer" id="envoyer">Envoyer</button><!--onBlur="alert('Ceci est un Blur')"-->
+            <span id="errorbouton"></span>
+            
+
+        
+        </div>
 
         </form>
 
-    </div>
+        
+        <script type="text/javascript" src="assets/js/style.js"></script>
 </body>
+
 </html>
 
 <!-- - Intégrer un formulaire avec les champs suivants : Nom, Prénom, email, téléphone, rue, cp, ville et message. 
