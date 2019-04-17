@@ -14,51 +14,58 @@
         <div id="formulaire">
 
             <div id="title">
-            <h1>Formulaire Javascript</h1>
+            <h1>Formulaire </h1>
 
         </div>
 
         <form id="formulaire_content">
 
-        <div>
+        <div id="formulaire_inputs">
 
-            <label class="contenu" for="nom">Nom</label>
-            <input type ="text"  id="nom" name="nom" size="30" maxlength="10"  > 
-            
+            <label class="contenu" for="nom"></label>
+            <input type ="text"  id="nom" placeholder="Nom" size="30" maxlength="30"  > 
             <span id="errornom"></span>
+            <span class="alphabet"></span>
             
 
-            <label class="contenu" for="prenom">Prenom</label>
-            <input type ="text"  id="prenom" name="prenom" size="30" maxlength="10"  ><!--onBlur="alert('Ceci est un Blur')"-->
+            <label class="contenu" for="prenom"></label>
+            <input type ="text"  id="prenom" placeholder="Prenom" size="30" maxlength="30"  ><!--onBlur="alert('Ceci est un Blur')"-->
             <span id="errorprenom"></span>
+            <span class="alphabet"></span>
 
-            <label class="contenu" for="mail">Email</label>
-            <input type="email"  id="email" name="email" size="30" maxlength="100"  ><!--onBlur="alert('Ceci est un Blur')"-->
+            <label class="contenu" for="mail"></label>
+            <input id="email" placeholder="Email" size="30" maxlength="100"  ><!--onBlur="alert('Ceci est un Blur')"-->
             <span id="erroremail" ></span>
+            <span class="errormail"></span>
             
 
-            <label class="contenu" for="phone">Telephone</label>
-            <input type ="tel"  id="tel" name="tel" size="30" maxlength="15"  ><!--onBlur="alert('Ceci est un Blur')"-->
+            <label class="contenu" for="phone"></label>
+            <input type ="tel"  id="tel" placeholder="Tel." size="30" maxlength="15"  ><!--onBlur="alert('Ceci est un Blur')"-->
             <span id="errortel"></span>
+            <span class="numerique"></span>
             
 
-            <label class="contenu" for="rue">Rue</label>
-            <input type="text"  id="rue" name="rue" size="30" maxlength="100" ><!--onBlur="alert('Ceci est un Blur')"-->
+            <label class="contenu" for="rue"></label>
+            <input type="text"  id="rue" placeholder="Rue" size="30" maxlength="100" ><!--onBlur="alert('Ceci est un Blur')"-->
             <span id="errorrue"></span>
+            <span class="alphabet"></span>
+
             
 
-            <label class="contenu" for="codepostal">Code Postal</label>
-            <input type="text"  id="codepostal" name="codepostal"size="30" maxlength="10"  ><!--onBlur="alert('Ceci est un Blur')"-->
+            <label class="contenu" for="codepostal"></label>
+            <input type="text"  id="codepostal" placeholder="Code Postal"size="30" maxlength="10"  ><!--onBlur="alert('Ceci est un Blur')"-->
             <span id="errorcp"></span>
+            <span class="num_post"></span>
             
 
-            <label class="contenu" for="ville">Ville</label>
-            <input type="text"  id="ville" name="ville" size="30" maxlength="30"  ><!--onBlur="alert('Ceci est un Blur')"-->
+            <label class="contenu" for="ville"></label>
+            <input type="text"  id="ville" placeholder="Ville" size="30" maxlength="30"  ><!--onBlur="alert('Ceci est un Blur')"-->
             <span id="errorville"></span>
+            <span class="alphabet"></span>
             
 
-            <label class="contenu" for="message">Votre message</label>
-            <textarea name="message" id="message" rows="10" cols="50"></textarea><!--onBlur="alert('Ceci est un Blur')"-->
+            <label class="contenu" for="message"></label>
+            <textarea placeholder="Message" id="message" rows="10" cols="50"></textarea><!--onBlur="alert('Ceci est un Blur')"-->
             <span id="errormessage"></span>
             
 
